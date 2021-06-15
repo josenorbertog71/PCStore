@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  
+</head>
+<body background="fondonorber.jpg" margin:0;>
+  
+  <div class="container">
+                   
+    <img src="logopc.png" class="img-fluid" alt="">
+
+    <h2>CALCULAR VALOR</h2>
+
+    <script>
+
+      function calcular()
+      {
+        var a = document.f1.a.value;
+        var b = document.f1.b.value;
+        var r = document.f1.f.value;
+        r=parseFloat(a)*(parseFloat(b)/100);
+        document.f1.f.value=r;
+        var a = document.f1.a.value;
+        var c = document.f1.c.value;
+        var r = document.f1.e.value;
+        r=parseFloat(a)*(parseFloat(c)/100);
+        document.f1.e.value=r;
+        var a = document.f1.a.value;
+        var e = document.f1.e.value;
+        var f = document.f1.f.value;
+        var r = document.f1.d.value;
+        r=parseFloat(a)+parseFloat(e)+parseFloat(f);
+        document.f1.d.value=r;
+      }   
+      
+      
+    </script>
+            
+    <form name="f1" action="calcventa.html" method="POST">
+
+      <div class="form-group">    
+      
+      
+          <label for="N1">Valor Compra:</label>
+          <input type="number" class="form-control" id="a" placeholder="Regitrar Compra" name="a">
+      
+          <br>
+          <label for="N2">Utilidad %:</label>
+          <input type="number" class="form-control" id="b" placeholder="Registrar % Utilidad" name="b">
+          <br>
+      
+          <label for="N3">IVA %:</label>
+          <input type="number" class="form-control" id="c" placeholder="Registrar % IVA" name="c">
+
+          <br><br>  
+          <label for="r1">Valor de Venta:</label>
+          <input type="text" class="form-control" id="d" name="d" placeholder="Valor de Venta">
+           
+          <label for="R2"></label>
+          <input type="text" class="form-control" style="visibility:hidden" id="e" name="e" placeholder="IVA">
+          
+
+          <label for="R3">Total Ganancia:</label>
+          <input type="text" class="form-control" id="f" name="f" placeholder=" Total Ganacia">
+               
+          <br><br> 
+      
+           <input type="Button" name="" value="Calcular" onclick="calcular()" class="btn btn-warning btn-lg">
+           <button type="Button" class="btn btn-primary btn-lg" onclick="reset()">Limpiar</button>
+           <a href="index.html" class="btn btn-primary btn-lg" role="button">Regresar</a> 
+      </div>
+      
+    </form> 
+    
+
+  </div>
+    
+
+  
+</body>
+</html>

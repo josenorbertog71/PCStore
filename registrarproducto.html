@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+
+ <title>Pc Storage</title>  
+
+</head>
+<body background="fondonorber.jpg" margin:0; >
+ 
+  <header>
+    <div class="container">
+                   
+      <img src="logopc.png" class="img-fluid" alt="">
+           
+    </div>
+    
+</header>
+
+<div class="container">
+  <h2>CARGUE DE PRODUCTOS</h2>
+
+  <form class="form-horizontal" action="insertar.php" role="form" method="POST">     
+
+
+  <label>Codigo:</label>
+  <input type="number" class="form-control" name="Codigo" placeholder = "Registrar Codigo">
+
+  <label>Nombre:</label>
+  <input type="text" class="form-control" name="Nombre" placeholder = "Registrar Nombre">
+
+  <label>Marca:</label>
+  <input type="text" class="form-control" name="Marca" placeholder = "Registrar Marca">
+
+  <label>Precio:</label>
+  <input type="number" class="form-control" name="Precio" placeholder = "Registrar Precio">
+
+  <label>Cantidad:</label>
+  <input type="number" class="form-control" name="Cantidad" placeholder = "Registrar Cantidad">
+
+  <br>
+      <button type="submit" class="btn btn-primary btn-lg">Guardar Producto</button>
+      <button type="Button" class="btn btn-warning btn-lg" onclick="reset()">Limpiar</button>
+      <a href="index.html" class="btn btn-primary btn-lg" role="button">Regresar</a>
+  </form>
+
+</div>
+
+</body>
+</html>
